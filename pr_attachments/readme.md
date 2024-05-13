@@ -1,7 +1,7 @@
 Hey! This is a PR attachment.
 
 You could write some context here, like
-> ⚠️ Remember to run these commands when you check out
+> ⚠️ Remember to run this command when you check out
 ```bash
 yarn build .
 ```
