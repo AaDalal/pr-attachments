@@ -1,0 +1,17 @@
+name: 'Check pr_attachments does not exist'
+
+on: [push, pull_request]
+
+jobs:
+  check_file_existence:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v1
+      - name: Check pr_attachments
+        id: pr_attachments_deleted
+        shell: bash
+        run: |
+          if [[ -d pr_attachments ]]; then
+            exit 1;
+          fi
