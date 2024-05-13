@@ -3,7 +3,8 @@ name: 'Check pr_attachments does not exist'
 on: [push, pull_request]
 
 jobs:
-  check_file_existence:
+  check-pr-attachments-dne:
+    name: Check pr_attachments does not exist
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
